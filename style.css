@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;700;900&family=Sacramento&display=swap');
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+     list-style: none;         /*for avoiding the doted style */
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+header {
+    background-color: black;
+    padding: 34px 78px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,1)0%, rgba(0,0,0,0)100% );
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo img {
+    width: 79px;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    color: white;
+    font-size: 22px;
+    font-weight: reg;
+    padding: 10px 8px;
+    margin: 0px 20px;
+}
+.navbar li:last-child a {
+    padding-right: 0;
+} 
+.navbar li:hover a {
+    color: #F70142;
+    /* transition: color ease 0.8s; */
+}
+.navbar li a {
+    transition: color ease 0.4s;
+}
+.navbar li.active a {
+    border-bottom:1px solid #F70142;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero .hero-info h1 {
+    color:azure;
+    font-size: 74px;
+    font-weight: 900;
+    line-height: 74px;
+}
+.hero .hero-info h1 span {
+    color: #F70142;
+    font-size: 38px;
+    font-weight: 400;
+    display: block;
+}
+.hero img {
+    width: 100%;
+}
+.hero .hero-info {
+    position: absolute;
+    top: 55%;
+    left: 79px;
+    transform: translateY(-90%);
+    max-width: 390px;
+    
+}
+.hero .hero-info .cta-btn {
+    background-color: #F70142;
+    color: white;
+    transition: background-color ease 0.4s;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 24px;
+    display: inline-block;
+    margin-top: 50px;   /* inline element cannot give margin */
+    
+}   
+.hero .hero-info .cta-btn:hover {
+    background-color: black; 
+}
+
